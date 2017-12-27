@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Event Handler</title>
+</head>
+<body>
+<p id="k" onclick="document.getElementById('k').innerHTML='Clicked Bhulaku' ">Bhulaku</p>
+
+<p id="k1" onclick="this.innerHTML='Clicked Atmiya' ">Atmiya</p>
+
+<h1 id="h" onclick="h.innerHTML='Clicked h1' ">H1</h1>
+
+<h2 id="h2" onclick="evntHandlerH2()">H2</h2>
+
+<h3 id="h3" onclick="evntHandlerH3(this)">H3</h3>
+
+<script type="text/javascript">
+    function evntHandlerH2() {
+        document.getElementById('h2').innerHTML="H2 clicked";
+    }
+    function evntHandlerH3(e) {
+        e.innerHTML="H3 clicked";
+    }
+
+</script>
+</body>
+</html>
