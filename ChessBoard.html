@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ChessBoard</title>
+</head>
+<body id="chessboard">
+<script type="text/javascript">
+    var b=document.getElementById("chessboard");
+    var t= document.createElement("table");
+    b.appendChild(t);
+    t.height=1000;
+    t.width=1000;
+    t.bgColor="grey";
+    t.border=10;
+    var row=[];
+
+
+
+    for(var i=0;i<8;i++)
+    {
+        row.push(document.createElement("tr"));
+        t.appendChild(row[i]);
+        for(var j=0;j<8;j++)
+        {
+            var td=document.createElement("td");
+            row[i].appendChild(td);
+            td.id=String.fromCharCode(97+j)+(i+1);
+            //console.log(td.id);
+            document.getElementById(td.id).innerHTML=td.id;
+        }
+    }
+
+
+</script>
+</body>
+</html>
