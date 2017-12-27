@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chess</title>
+</head>
+<body>
+<p id="k" onclick="handleevent(this)" onmouseover="handlehower(this)" onmouseout="handlemouseout(this)" style="background:yellow">This is para</p>
+
+<input id="in" type="text" />
+<button onclick="handlebutton(this)">GO</button>
+
+
+<script>
+    function handleevent(e) {
+        e.innerHTML="hi";
+        e.style.background="red";
+    }
+    function handlehower(e) {
+        e.style.background="green";
+    }
+    function handlemouseout(e) {
+        e.style.background="yellow";
+    }
+    function handlebutton(e) {
+        document.getElementById("k").innerHTML=document.getElementById("in").value;
+    }
+
+
+
+</script>
+</body>
+</html>
